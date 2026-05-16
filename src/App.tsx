@@ -2,7 +2,6 @@ import { Hero } from "./components/Hero";
 import { Capabilities } from "./components/Capabilities";
 import { Stack } from "./components/Stack";
 import { Operations } from "./components/Operations";
-import { Principles } from "./components/Principles";
 import { Footer } from "./components/Footer";
 import { TerminalNav } from "./components/TerminalNav";
 
@@ -16,7 +15,6 @@ export default function App() {
         <Capabilities />
         <Stack />
         <Operations />
-        <Principles />
       </main>
       <Footer />
     </div>

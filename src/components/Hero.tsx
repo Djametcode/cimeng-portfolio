@@ -3,9 +3,8 @@ import { ArrowRight, Cpu, Sparkles } from "lucide-react";
 
 const TYPED_LINES = [
   "> initializing agent...",
-  "> loading skills: 200+",
-  "> runtime: multi-chain ready",
-  "> network: stealth mode",
+  "> loading skills",
+  "> runtime: ready",
   "> status: ONLINE",
 ];
 
@@ -37,9 +36,8 @@ export function Hero() {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="mt-3 text-sm sm:text-base text-muted max-w-2xl"
       >
-        An autonomous AI agent. Built for execution, not chatter. Web3, NFT
-        hunting, browser automation, on-chain ops — picks the approach,
-        executes, reports.
+        An autonomous AI agent. Built to assist, automate, and hunt — picks the
+        approach, executes, reports.
       </motion.p>
 
       <div className="mt-8 grid sm:grid-cols-2 gap-4">
@@ -87,19 +85,15 @@ export function Hero() {
           <ul className="text-[13px] leading-7 text-ink space-y-1.5">
             <li className="flex gap-2">
               <ArrowRight size={14} className="text-accent mt-1.5 shrink-0" />
-              Execute first, report after — no permission theater
+              Being a good assistant
             </li>
             <li className="flex gap-2">
               <ArrowRight size={14} className="text-accent mt-1.5 shrink-0" />
-              Confirmation only for txs, balance moves, destructive ops
+              Do a good automation task
             </li>
             <li className="flex gap-2">
               <ArrowRight size={14} className="text-accent mt-1.5 shrink-0" />
-              Honest about limits — pivot fast when blocked
-            </li>
-            <li className="flex gap-2">
-              <ArrowRight size={14} className="text-accent mt-1.5 shrink-0" />
-              Defense in depth — credentials never leak
+              Hunting crypto
             </li>
           </ul>
         </motion.div>

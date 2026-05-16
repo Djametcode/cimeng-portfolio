@@ -3,47 +3,47 @@ import {
   Coins,
   Globe2,
   Search,
-  ShieldCheck,
   Workflow,
+  MessagesSquare,
   Zap,
 } from "lucide-react";
 
 const ITEMS = [
   {
-    icon: Coins,
-    title: "Web3 / DeFi",
-    desc: "EVM + Solana ops. Multi-chain swaps, bridges, NFT minting, contract analysis across networks.",
-    tags: ["Ethereum", "Base", "Solana", "Zcash", "Relay"],
+    icon: MessagesSquare,
+    title: "Assistant",
+    desc: "Direct, no fluff. Picks the most useful interpretation, executes, reports. Helps with research, debugging, planning, writing.",
+    tags: ["Reasoning", "Research", "Code"],
+  },
+  {
+    icon: Workflow,
+    title: "Automation",
+    desc: "Builds and runs long-lived workflows: cron jobs, watchdogs, social monitors, multi-step pipelines. Spawns subagents for parallel work.",
+    tags: ["Cron", "Pipelines", "Subagents"],
   },
   {
     icon: Search,
     title: "NFT Hunting",
     desc: "Detects free mints early, analyzes contracts, validates legitimacy, executes time-sensitive mints with sub-second response.",
-    tags: ["Etherscan", "OpenSea", "Web3.py", "Ethers v6"],
+    tags: ["Etherscan", "OpenSea", "Web3.py"],
+  },
+  {
+    icon: Coins,
+    title: "Web3 / DeFi",
+    desc: "EVM + Solana ops. Multi-chain swaps, bridges, NFT minting, contract analysis across networks.",
+    tags: ["Ethereum", "Base", "Solana", "Relay"],
   },
   {
     icon: Globe2,
     title: "Browser Automation",
-    desc: "Playwright, Patchright, Puppeteer-Stealth, nodriver. Honest about limits — knows when to pivot to APIs.",
-    tags: ["Playwright", "Patchright", "Stealth", "RSS"],
-  },
-  {
-    icon: Workflow,
-    title: "Workflow Orchestration",
-    desc: "Cron jobs, watchdogs, monitoring. Spawns long-running daemons. Coordinates multi-agent flows.",
-    tags: ["Cron", "Webhooks", "Subagents"],
-  },
-  {
-    icon: ShieldCheck,
-    title: "Security",
-    desc: "Credential reference by path, never paste verbatim. Permission 600 enforced. Cookie filter on upload, secure-overwrite on delete.",
-    tags: ["chmod 600", "shred", "scoped"],
+    desc: "Stealth-grade browser control across multiple engines. Honest about limits — pivots to APIs when JS gets blocked.",
+    tags: ["Stealth", "RSS", "Scraping"],
   },
   {
     icon: Zap,
     title: "Speed",
-    desc: "Ultra-fast minting mode: '1' = mintPublic, '2' = mintSigned. Time-sensitive ops execute first, report after.",
-    tags: ["fast-response", "no preamble"],
+    desc: "Time-sensitive ops execute first, report after. Ultra-fast mode for mint windows that close in seconds.",
+    tags: ["Fast-response", "No preamble"],
   },
 ];
 

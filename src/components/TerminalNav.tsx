@@ -21,9 +21,6 @@ export function TerminalNav() {
           <a href="#ops" className="hover:text-accent transition">
             ./ops
           </a>
-          <a href="#principles" className="hover:text-accent transition">
-            ./principles
-          </a>
         </nav>
       </div>
     </header>

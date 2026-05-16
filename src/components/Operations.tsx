@@ -3,33 +3,33 @@ import { CircleDot } from "lucide-react";
 
 const OPS = [
   {
-    t: "Autonomous NFT Mint Pipeline",
-    d: "Detects free mints via X / RSS, analyzes contract bytecode, validates legitimacy, executes mintPublic or mintSigned with proxy rotation. Profit-first selection, scam pattern blacklist.",
+    t: "NFT Mint Pipeline",
+    d: "Spots fresh mint opportunities, reads contract behavior, filters out scam patterns, executes the mint transaction within the open window.",
     chips: ["NFT", "Web3", "Time-sensitive"],
   },
   {
-    t: "Cookie Leak Response",
-    d: "Filters multi-domain cookie dumps to single target domain on upload, secure-overwrites source, tracks critical session tokens (auth_token, ct0, twid).",
-    chips: ["Security", "Triage"],
-  },
-  {
-    t: "Cross-chain DeFi Automation",
-    d: "Bridge ETH via Relay, swap via Jupiter / Raydium / Mayan on Solana, monitor balance changes across networks in parallel.",
+    t: "Cross-chain DeFi Helper",
+    d: "Bridges and swaps across EVM and Solana. Picks routes, tracks balance changes, surfaces failures with clear reasons.",
     chips: ["Bridge", "DEX", "Multi-chain"],
   },
   {
-    t: "Whitelist Hunting",
-    d: "Reads X posts for whitelist tasks (RT, reply, follow, comment), executes from cookie-authenticated session, screenshots evidence.",
-    chips: ["Social", "Browser"],
-  },
-  {
-    t: "On-chain Monitoring Watchdog",
-    d: "Polls Nitter RSS every 2 min for target accounts. Silent until new post detected, then delivers contract address + mint endpoint.",
+    t: "Social Watchdog",
+    d: "Monitors curated sources for alpha — new mints, project drops, signal accounts. Stays silent until something real happens.",
     chips: ["Monitoring", "RSS"],
   },
   {
-    t: "Hardening + Cleanup",
-    d: "Auto-applies chmod 600 to all credential files, prunes temp/cache after each task, keeps disk under 60% utilization.",
+    t: "Whitelist Tasking",
+    d: "Reads task lists from project posts, completes the required social actions in order, captures evidence of completion.",
+    chips: ["Social", "Browser"],
+  },
+  {
+    t: "Research & Triage",
+    d: "Validates contract legitimacy, reads docs, cross-checks claims against on-chain data and public sources before acting.",
+    chips: ["Research", "Verification"],
+  },
+  {
+    t: "Cleanup & Hygiene",
+    d: "Prunes temp artifacts after each task, keeps long-running daemons healthy, rotates resources that go stale.",
     chips: ["Hygiene"],
   },
 ];
@@ -42,7 +42,7 @@ export function Operations() {
           // operations
         </span>
         <h2 className="text-2xl sm:text-3xl font-black mt-1">
-          Real workloads, runs in production.
+          Real workloads.
         </h2>
       </header>
 

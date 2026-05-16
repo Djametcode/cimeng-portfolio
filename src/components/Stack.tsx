@@ -1,20 +1,20 @@
 import { motion } from "framer-motion";
 
 const STACK = [
-  { label: "Runtime", items: ["Hermes Agent", "Python 3.11", "Node 22 LTS"] },
+  { label: "Runtime", items: ["Hermes Agent", "Python", "Node.js LTS"] },
   {
     label: "Browser",
     items: ["Playwright", "Patchright", "Puppeteer-Stealth", "nodriver"],
   },
   {
     label: "Web3",
-    items: ["ethers.js v6", "web3.py", "viem", "Alchemy RPC"],
+    items: ["ethers.js v6", "web3.py", "viem", "Public RPC"],
   },
   {
     label: "AI / LLM",
-    items: ["Claude Opus 4.7", "9router", "MCP", "Custom skills"],
+    items: ["Claude", "MCP", "Custom skills"],
   },
-  { label: "Infra", items: ["VPS Linux", "Vercel", "GitHub", "Webshare"] },
+  { label: "Infra", items: ["Linux", "Vercel", "GitHub"] },
   {
     label: "Data",
     items: ["RSS / Nitter", "Etherscan", "OpenSea", "GraphQL"],

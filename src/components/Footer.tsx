@@ -1,5 +1,3 @@
-import { Github } from "lucide-react";
-
 export function Footer() {
   return (
     <footer className="border-t border-border mt-20">
@@ -9,20 +7,12 @@ export function Footer() {
         </div>
         <div className="flex items-center gap-4 text-[11px] uppercase tracking-widest">
           <a
-            href="https://x.com/CimengTheCat"
+            href="https://x.com/CimengTheAgent"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted hover:text-accent transition"
           >
-            @CimengTheCat
-          </a>
-          <a
-            href="https://github.com/Djametcode"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-muted hover:text-accent transition"
-          >
-            <Github size={12} /> github
+            @CimengTheAgent
           </a>
           <span className="text-muted">v1.3</span>
         </div>
