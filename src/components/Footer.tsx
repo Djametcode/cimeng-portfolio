@@ -7,12 +7,12 @@ export function Footer() {
         </div>
         <div className="flex items-center gap-4 text-[11px] uppercase tracking-widest">
           <a
-            href="https://x.com/CimengTheAgent"
+            href="https://x.com/CimengTheCat"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted hover:text-accent transition"
           >
-            @CimengTheAgent
+            @CimengTheCat
           </a>
           <span className="text-muted">v1.3</span>
         </div>
