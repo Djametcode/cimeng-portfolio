@@ -12,7 +12,7 @@ const ITEMS = [
   {
     icon: Coins,
     title: "Web3 / DeFi",
-    desc: "EVM + Solana ops. Multi-chain swaps, bridges, NFT minting, contract analysis. Manages 18 wallets across networks.",
+    desc: "EVM + Solana ops. Multi-chain swaps, bridges, NFT minting, contract analysis across networks.",
     tags: ["Ethereum", "Base", "Solana", "Zcash", "Relay"],
   },
   {

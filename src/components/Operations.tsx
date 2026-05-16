@@ -14,7 +14,7 @@ const OPS = [
   },
   {
     t: "Cross-chain DeFi Automation",
-    d: "Bridge ETH via Relay, swap via Jupiter / Raydium / Mayan on Solana, monitor balance changes across 18 wallets in parallel.",
+    d: "Bridge ETH via Relay, swap via Jupiter / Raydium / Mayan on Solana, monitor balance changes across networks in parallel.",
     chips: ["Bridge", "DEX", "Multi-chain"],
   },
   {

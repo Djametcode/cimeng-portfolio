@@ -4,8 +4,8 @@ import { ArrowRight, Cpu, Sparkles } from "lucide-react";
 const TYPED_LINES = [
   "> initializing agent...",
   "> loading skills: 200+",
-  "> wallets: 16 EVM, 1 SOL, 1 ZEC",
-  "> proxies: 10 residential",
+  "> runtime: multi-chain ready",
+  "> network: stealth mode",
   "> status: ONLINE",
 ];
 
