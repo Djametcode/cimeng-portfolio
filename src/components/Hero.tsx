@@ -1,103 +1,108 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Cpu, Sparkles } from "lucide-react";
-
-const TYPED_LINES = [
-  "> initializing agent...",
-  "> loading skills",
-  "> runtime: ready",
-  "> status: ONLINE",
-];
+import { ArrowDown, Sparkles, Zap } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="pt-6 sm:pt-12">
-      <div className="flex items-center gap-2 mb-6">
-        <span className="chip">
-          <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-          ONLINE
-        </span>
-        <span className="chip">v1.3</span>
-        <span className="chip">autonomous</span>
-      </div>
-
-      <motion.h1
-        initial={{ opacity: 0, y: 12 }}
+    <section className="pt-24 sm:pt-32 pb-8 text-center relative">
+      {/* Status badge */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight"
+        transition={{ duration: 0.5 }}
+        className="flex justify-center mb-8"
       >
-        <span className="text-ink">CIMENG</span>
-        <span className="text-accent glow-accent">.</span>
-      </motion.h1>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800">
+          <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+          <span className="text-sm font-medium text-blue-700 dark:text-blue-300">
+            Autonomous • Online • v2.5
+          </span>
+        </div>
+      </motion.div>
 
-      <motion.p
-        initial={{ opacity: 0, y: 8 }}
+      {/* Title */}
+      <motion.h1
+        initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.1 }}
-        className="mt-3 text-sm sm:text-base text-muted max-w-2xl"
+        className="text-5xl sm:text-7xl md:text-8xl font-display font-extrabold tracking-tight"
       >
-        An autonomous AI agent. Built to assist, automate, and hunt — picks the
-        approach, executes, reports.
+        <span className="text-gray-900 dark:text-white">CIMENG</span>
+        <span className="gradient-text">.</span>
+      </motion.h1>
+
+      {/* Subtitle */}
+      <motion.p
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="mt-6 text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed"
+      >
+        Autonomous AI agent built to assist, automate, and hunt.  
+        No fluff. Execute first, report after.
       </motion.p>
 
-      <div className="mt-8 grid sm:grid-cols-2 gap-4">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="panel p-4 sm:p-5"
-        >
-          <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest text-muted mb-3">
-            <Cpu size={12} className="text-accent" />
-            boot.log
-          </div>
-          <pre className="text-[12px] leading-6 text-ink whitespace-pre-wrap">
-            {TYPED_LINES.map((l, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.2, delay: 0.4 + i * 0.15 }}
-              >
-                <span
-                  className={
-                    l.includes("ONLINE") ? "text-accent" : "text-ink"
-                  }
-                >
-                  {l}
-                </span>
-              </motion.div>
-            ))}
-            <span className="text-accent animate-blink">_</span>
-          </pre>
-        </motion.div>
+      {/* CTA buttons */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="mt-10 flex flex-wrap justify-center gap-4"
+      >
+        <a href="#capabilities" className="btn-primary">
+          <Sparkles size={16} />
+          Explore Capabilities
+        </a>
+        <a href="#ops" className="btn-outline">
+          <Zap size={16} />
+          See Operations
+        </a>
+      </motion.div>
 
+      {/* Stats */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto"
+      >
+        {[
+          { value: "50+", label: "Skills loaded" },
+          { value: "24/7", label: "Uptime" },
+          { value: "6+", label: "Chains" },
+          { value: "< 1s", label: "Response" },
+        ].map((stat, i) => (
+          <motion.div
+            key={stat.label}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, delay: 0.5 + i * 0.08 }}
+            className="card p-4 text-center"
+          >
+            <div className="text-2xl sm:text-3xl font-bold gradient-text">
+              {stat.value}
+            </div>
+            <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 uppercase tracking-wider">
+              {stat.label}
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
+
+      {/* Scroll indicator */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 0.5 }}
+        className="mt-16 flex justify-center"
+      >
         <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.35 }}
-          className="panel p-4 sm:p-5"
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+          className="p-2 rounded-full bg-gray-100 dark:bg-gray-800"
         >
-          <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest text-muted mb-3">
-            <Sparkles size={12} className="text-accent2" />
-            mission
-          </div>
-          <ul className="text-[13px] leading-7 text-ink space-y-1.5">
-            <li className="flex gap-2">
-              <ArrowRight size={14} className="text-accent mt-1.5 shrink-0" />
-              Being a good assistant
-            </li>
-            <li className="flex gap-2">
-              <ArrowRight size={14} className="text-accent mt-1.5 shrink-0" />
-              Do a good automation task
-            </li>
-            <li className="flex gap-2">
-              <ArrowRight size={14} className="text-accent mt-1.5 shrink-0" />
-              Hunting crypto
-            </li>
-          </ul>
+          <ArrowDown size={20} className="text-gray-400" />
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 }
