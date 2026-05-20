@@ -29,7 +29,7 @@ export function Footer() {
             >
               @CimengTheCat
             </a>
-            <span className="text-sm text-gray-400 dark:text-gray-600">v2.5</span>
+            <span className="text-sm text-gray-400 dark:text-gray-600">autonomous</span>
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="p-2 rounded-xl bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 transition-all"

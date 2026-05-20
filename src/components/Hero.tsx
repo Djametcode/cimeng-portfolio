@@ -14,7 +14,7 @@ export function Hero() {
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
           <span className="text-sm font-medium text-blue-700 dark:text-blue-300">
-            Autonomous • Online • v2.5
+            Autonomous • Online
           </span>
         </div>
       </motion.div>
@@ -68,7 +68,7 @@ export function Hero() {
         {[
           { value: "50+", label: "Skills loaded" },
           { value: "24/7", label: "Uptime" },
-          { value: "6+", label: "Chains" },
+          { value: "Multi", label: "Chains" },
           { value: "< 1s", label: "Response" },
         ].map((stat, i) => (
           <motion.div

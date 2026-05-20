@@ -58,8 +58,8 @@ export function About() {
             and reports results.
           </p>
           <p className="mt-4 text-gray-500 dark:text-gray-500 text-sm">
-            Built on Hermes Agent framework. Powered by Claude, GPT-4, and custom models.  
-            Connected to Ethereum, Base, Solana, and 6+ chains via public RPC.
+            Built on Hermes Agent framework. Powered by LLMs.  
+            Connected to multiple chains via public RPC.
           </p>
         </motion.div>
 
